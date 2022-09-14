@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char source[] ="_putchar";
+	char source[] = "_putchar";
 	int i;
 	int len = strlen(source);
 
