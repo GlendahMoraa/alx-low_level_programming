@@ -10,7 +10,7 @@ int main(void)
 {
 	char source[] ="_putchar";
 	int i;
-	int len = strlen(source)
+	int len = strlen(source);
 
 	for (i = 0; i < len; i++)
 		_putchar(source[i]);
