@@ -19,7 +19,7 @@ int main(void)
 
 	for (i = 0; i < 59; i++)
 	{
-		s = a + b;
+		c = a + b;
 		a = b;
 		b = c;
 
