@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * main - starting point of a function
@@ -8,11 +8,11 @@
 
 void print_alphabet(void)
 {
-	char alphabet;
+	char c;
 
-	for (alphabet = "a"; alphabet <= "z"; alphabet++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(alphabet);
+		_putchar(c);
 	}
-	_putchar("\n");
+	_putchar('\n');
 }
