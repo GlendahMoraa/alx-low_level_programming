@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+
 
 /**
  * main - starting point of a function
@@ -10,26 +12,20 @@
 
 int main(void)
 {
-	long int n;
 
-	n = 612852475143;
-	long int div = 2, ans = 0, maxFact;
+unsigned int long n = 612852475143, a = (int) sqrt(n);
 
-	while (n != 0)
+while (1)
+{
+
+	if (n % a == 0)
 	{
-		if (n % div != 0)
-			div = div + 1;
-		else
-		{
-			maxFact = n;
-			n = n / div;
-			if (n == 1)
-			{
-				printf("%ld", maxFact);
-				ans = 1;
-				break;
-			}
-		}
+		printf("%lu \n", n / a);
+		break;
 	}
-	return (0);
-	}
+	a--;
+
+}
+
+return (0);
+}
