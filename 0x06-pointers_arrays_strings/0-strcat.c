@@ -26,5 +26,6 @@ char *_strcat(char *dest, char *src)
 	for (int i = 0; i < len_src; i++)
 	a[len_dest + 1] = len_src[i];
 	a[str_size - 1] = '\0';
+	_putchar('\n');
 	return (a);
 }
