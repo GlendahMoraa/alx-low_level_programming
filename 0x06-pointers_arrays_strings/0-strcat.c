@@ -16,16 +16,16 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int len_dest = strlen(dest);
-	int len_src = strlen(src);
-	int str_size = len_dest + len_src + 1;
-	char *a = calloc(str_size, sizeof(char));
+	int i = 0, lenght = 0;
 
-	for (int i = 0; i < len_dest; i++)
-		a[i] = dest[i];
-	for (int i = 0; i < len_src; i++)
-		a[len_dest + 1] = src[i];
-	a[str_size - 1] = '\0';
-	_putchar('\n');
-	return (a);
+	while (*(dest + lenght) != '\0')
+		lenght++;
+	for (i = 0; *(src + i) != '\0'; i++)
+	{
+		*(dest + lenght) = *(src + i);
+		lenght++;
+	}
+	*(dest + lenght) = *(src + i);
+
+	return (dest);
 }
