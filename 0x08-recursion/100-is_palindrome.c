@@ -1,5 +1,7 @@
 #include "main.h"
 
+void check(char *s, int start, int end, int *flag);
+int _strlen_recursion(char *s);
 /**
  * is_palindrome - returns the 1 if s is a palindrome
  * @s: string to be checked
