@@ -2,25 +2,15 @@
 #include "main.h"
 
 /**
- * main - a function that prints the number of arguments passed into main
+ * main - a function that prints the name of the program
  * @argc: Number of command line arguments
  * @argv: Array name
- * Return: 0
+ * Return: 0 for success
  */
 
 int main(int argc, char *argv[])
 {
-	int j;
-
-	if (argc == 1)
-		printf("%d\n", argc - 1);
-	else
-	{
-		for (j = 0; *argv; j++, argv++)
-			;
-
-		printf("%d\n", j - 1);
-	}
+	printf("%s\n", argv[argc * 0]);
 
 	return (0);
 }
