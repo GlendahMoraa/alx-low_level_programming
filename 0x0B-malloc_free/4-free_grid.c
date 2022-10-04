@@ -5,17 +5,15 @@
  * @grid: pointer
  * @height: height
  */
-
 void free_grid(int **grid, int height)
 {
-	int *grid;
-	int h;
-	h = 0;
-	while (h < height)
+	int i;
+	int *p;
+
+	for (i = 0; i < height; i++)
 	{
-		grid[h];
-		h++;
-		free(grid[h]);
+		p = grid[i];
+		free(p);
 	}
 	free(grid);
 }
